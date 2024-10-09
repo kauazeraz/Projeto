@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    background-color: rgb(27, 27, 119);
+}
+
+nav li {
+    display: inline-block;
+}
+/* tag <a> por padrão é inline.
+margin e padding são aplicados só na horizontal
+mudando para inline-blocl, aceita vertical. */
+
+nav li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 30px;
+}
+
+/* hover aciona uma ação ao passar o mouse sobre os elementos, no caso, uma sobra no menu */
+
+nav li a:hover {
+    background-color: rgb(183, 45, 45);
+}
+
+.menu-item {
+    position: absolute;
+    /* os numeros se referem respectivamente ao: tamanho horizontal, tamanho vertical,
+    espalhamento da sombra, cor */
+    box-shadow: 3px 3px 10px black;
+    display: none;
+    background-color: rgb(27, 27, 119);
+}
+
+.menu-item a {
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+/* ao passar o mouse na caixa, ação será no menu */
+.caixa-menu:hover .menu-item {
+    display: block;
+}
+
+.texto {
+    font-size: 30px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
